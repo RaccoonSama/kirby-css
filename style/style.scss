@@ -19,7 +19,8 @@ body {
     background-color: rgb(253, 151, 168);
     border-radius: 50%;
    position: absolute;
-   left: 50px;
+   left: 365px;
+   top: 65px;
   
 }
 .top-part {
@@ -126,7 +127,6 @@ body {
         height: 160px;
         width: 130px;
         background-color: rgb(253, 151, 168);
-        border: 1px solid red;
         clip-path: ellipse(25% 40% at 50% 50%);
     }
 }
@@ -154,9 +154,256 @@ body {
     }
 }
 
-.bg {z-index: -999;
+
+/******************************************************************************************************************************************************************
+*
+*
+*
+*
+*
+*
+*
+*                           BACKROUND
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+.bg {
+    z-index: -999;
     position: relative;
     background-color: lightblue;
     width: 100vw;
     height: 100vh;
+}
+
+
+.main-body-2 {
+    background-color: #f14835;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    transform: rotate3d(1, 1, 1, -25deg);
+    z-index: -2;
+}
+.hat {
+    position: absolute;
+    z-index: 9;
+    background-color: #7596f7;
+    width: 190px;
+    height: 65px;
+    top: -10px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    left: 5px;
+}
+.top-part-2 {
+    .eyes-2 {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content: space-around;
+        left: 25px;
+        top: 20px;
+        position: absolute;
+        z-index: 9;
+        .eye-l-2 {
+            height: 60px;
+            width: 30px;
+            background-color: black;
+            padding: 15px;
+            clip-path: ellipse(25% 40% at 50% 50%);
+            background: rgb(2,0,36);
+            background: linear-gradient(180deg, rgba(2,0,36,1) 36%, rgba(145,46,4,1) 100%);
+        }
+        .eye-r-2 {
+            height: 60px;
+            width: 30px;
+            background-color: black;
+            padding: 15px;
+            clip-path: ellipse(25% 40% at 50% 50%);
+            background: rgb(2,0,36);
+            background: linear-gradient(180deg, rgba(2,0,36,1) 36%, rgba(145,46,4,1) 100%);
+        }
+        .whitedot {
+           
+            background-color: white;
+            height: 40px;
+            width: 30px;
+            margin: -8px auto;
+            clip-path: ellipse(25% 40% at 50% 50%);
+        }
+    }
+}
+.blushes-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    left: -10px;
+    top: 105px;
+    position: absolute;
+    z-index: 9;
+    .blush-l-2 {
+        width: 80px;
+        height: 20px;
+        clip-path: ellipse(25% 40% at 50% 50%);
+        background-color: #f9965d;
+    }
+    .blush-r-2 {
+        width: 80px;
+        height: 20px;
+        clip-path: ellipse(25% 40% at 50% 50%);
+        background-color: #f9965d;
+    }
+}
+.mouth-2 {
+    z-index: 1;
+    position: relative;
+    .parta-2 {
+ 
+        position: absolute;
+        top: 15px;
+        left: 23px;
+        height: 170px;
+        width: 140px;
+        border-radius: 500px;
+       background-color: #fdeaaf;
+    }
+    .partb-2 {
+        position: absolute;
+        top: 65px;
+        left: 13px;
+        height: 125px;
+        width: 160px;
+        border-radius: 48% 52% 52% 48% / 53% 51% 49% 47% ;
+       background-color: #fdeaaf;
+    }
+}
+.arms-2 {
+  
+    .arm-l-2 {
+        position: absolute;
+        top: 30px;
+        left: -55px;
+        transform: rotate(45deg);
+        height: 160px;
+        width: 130px;
+        background-color: #f14835;
+        clip-path: ellipse(25% 40% at 50% 50%);
+    }
+    .arm-r-2 {
+       
+        position: absolute;
+        left: 120px;
+        top: 40px;
+        transform: rotate(-50deg);
+        height: 160px;
+        width: 130px;
+        background-color: #f14835;
+        clip-path: ellipse(25% 40% at 50% 50%);
+    }
+}
+.feets-2 {
+    .foot-l-2 {
+        z-index: -9;
+        position: absolute;
+        transform: rotate(-100deg);
+        top: 120px;
+        left: 10px;
+        border-radius: 52% 48% 8% 92% / 67% 40% 60% 33%  ;
+        width: 63px;
+        height: 129px;
+        background-color: #e2b93c;
+    }
+    .foot-r-2-correction {
+        z-index: -8;
+        background-color: #f14835;
+        width: 160px;
+        height: 120px;
+        border-radius: 50%;
+        left: 26px;
+        top: 80px;
+        position: absolute;
+    }
+    .foot-r-2 {
+        z-index: -9;
+        position: absolute;
+        transform: rotate(-20deg);
+        left: 107px;
+        top: 120px;
+        border-radius: 31% 69% 39% 61% / 47% 45% 55% 53% ;
+        width: 63px;
+        height: 129px;
+        background-color: #e2b93c;
+    }
+}
+.spear {
+    .cloth {
+        background-color: #f14835;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        left: -24px;
+        
+        position: absolute;
+        z-index: 100;
+    }
+    .cloth-up {
+        height: 15px;
+        width: 32px;
+        background-color: #f14835;
+        border-radius: 33% 67% 88% 12% / 67% 54% 46% 33% ;
+        position: absolute;
+        left: -8px;
+        top: 10px;
+        transform: rotate(45deg);
+    }
+    .cloth-down {
+        height: 15px;
+        width: 32px;
+        background-color: #f14835;
+        border-radius: 33% 67% 88% 12% / 67% 54% 46% 33% ;
+        position: absolute;
+        left: -8px;
+       
+        transform: rotate(-45deg);
+    }
+    .stick {
+z-index: 99;
+width: 20px;
+height: 250px;
+background-color: brown;
+position: absolute;
+left: -20px;
+border-radius: 20px;
+}
+.part1 {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    left: -25px;
+    top: -10px;
+    transform: rotate(180deg);
+    background-color: rgb(231, 231, 231);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.part2 {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    left: -25px;
+    top: -60px;
+   
+    background-color: rgb(247, 247, 247);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
 }

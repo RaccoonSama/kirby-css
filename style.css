@@ -19,14 +19,21 @@ body {
   background-color: #fd97a8;
   border-radius: 50%;
   position: absolute;
-  left: 50px;
+  left: 365px;
+  top: 65px;
 }
 
 .top-part .eyes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 40%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   left: 55px;
   top: 20px;
   position: absolute;
@@ -38,8 +45,10 @@ body {
   width: 30px;
   background-color: black;
   padding: 15px;
-  clip-path: ellipse(25% 40% at 50% 50%);
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
   background: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, black), color-stop(40%, #00181d), color-stop(65%, #002b65), to(#0059ff));
   background: linear-gradient(180deg, black 20%, #00181d 40%, #002b65 65%, #0059ff 100%);
 }
 
@@ -48,8 +57,10 @@ body {
   width: 30px;
   background-color: black;
   padding: 15px;
-  clip-path: ellipse(25% 40% at 50% 50%);
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
   background: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, black), color-stop(40%, #00181d), color-stop(65%, #002b65), to(#0059ff));
   background: linear-gradient(180deg, black 20%, #00181d 40%, #002b65 65%, #0059ff 100%);
 }
 
@@ -58,14 +69,21 @@ body {
   height: 40px;
   width: 30px;
   margin: -8px auto;
-  clip-path: ellipse(25% 40% at 50% 50%);
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
 }
 
 .blushes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   left: -5px;
   top: 115px;
   position: absolute;
@@ -75,14 +93,16 @@ body {
 .blushes .blush-l {
   width: 80px;
   height: 20px;
-  clip-path: ellipse(25% 40% at 50% 50%);
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
   background-color: #e74e67;
 }
 
 .blushes .blush-r {
   width: 80px;
   height: 20px;
-  clip-path: ellipse(25% 40% at 50% 50%);
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
   background-color: #e74e67;
 }
 
@@ -116,28 +136,32 @@ body {
 .arms .arm-l {
   position: absolute;
   left: -50px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   height: 160px;
   width: 130px;
   background-color: #fd97a8;
-  clip-path: ellipse(25% 40% at 50% 50%);
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
 }
 
 .arms .arm-r {
   position: absolute;
   left: 120px;
   top: 40px;
-  transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
   height: 160px;
   width: 130px;
   background-color: #fd97a8;
-  border: 1px solid red;
-  clip-path: ellipse(25% 40% at 50% 50%);
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
 }
 
 .feets .foot-l {
   position: absolute;
-  transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
   top: 120px;
   border-radius: 31% 69% 39% 61% / 47% 45% 55% 53%;
   width: 63px;
@@ -148,7 +172,8 @@ body {
 .feets .foot-r {
   z-index: -9;
   position: absolute;
-  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
   left: 97px;
   top: 120px;
   border-radius: 31% 69% 39% 61% / 47% 45% 55% 53%;
@@ -157,6 +182,24 @@ body {
   background-color: #ce566a;
 }
 
+/******************************************************************************************************************************************************************
+*
+*
+*
+*
+*
+*
+*
+*                           BACKROUND
+*
+*
+*
+*
+*
+*
+*
+*
+*/
 .bg {
   z-index: -999;
   position: relative;
@@ -164,3 +207,267 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.main-body-2 {
+  background-color: #f14835;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  -webkit-transform: rotate3d(1, 1, 1, -25deg);
+          transform: rotate3d(1, 1, 1, -25deg);
+  z-index: -2;
+}
+
+.hat {
+  position: absolute;
+  z-index: 9;
+  background-color: #7596f7;
+  width: 190px;
+  height: 65px;
+  top: -10px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  left: 5px;
+}
+
+.top-part-2 .eyes-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 65%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: 25px;
+  top: 20px;
+  position: absolute;
+  z-index: 9;
+}
+
+.top-part-2 .eyes-2 .eye-l-2 {
+  height: 60px;
+  width: 30px;
+  background-color: black;
+  padding: 15px;
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
+  background: #020024;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(36%, #020024), to(#912e04));
+  background: linear-gradient(180deg, #020024 36%, #912e04 100%);
+}
+
+.top-part-2 .eyes-2 .eye-r-2 {
+  height: 60px;
+  width: 30px;
+  background-color: black;
+  padding: 15px;
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
+  background: #020024;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(36%, #020024), to(#912e04));
+  background: linear-gradient(180deg, #020024 36%, #912e04 100%);
+}
+
+.top-part-2 .eyes-2 .whitedot {
+  background-color: white;
+  height: 40px;
+  width: 30px;
+  margin: -8px auto;
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+.blushes-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: -10px;
+  top: 105px;
+  position: absolute;
+  z-index: 9;
+}
+
+.blushes-2 .blush-l-2 {
+  width: 80px;
+  height: 20px;
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
+  background-color: #f9965d;
+}
+
+.blushes-2 .blush-r-2 {
+  width: 80px;
+  height: 20px;
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
+  background-color: #f9965d;
+}
+
+.mouth-2 {
+  z-index: 1;
+  position: relative;
+}
+
+.mouth-2 .parta-2 {
+  position: absolute;
+  top: 15px;
+  left: 23px;
+  height: 170px;
+  width: 140px;
+  border-radius: 500px;
+  background-color: #fdeaaf;
+}
+
+.mouth-2 .partb-2 {
+  position: absolute;
+  top: 65px;
+  left: 13px;
+  height: 125px;
+  width: 160px;
+  border-radius: 48% 52% 52% 48% / 53% 51% 49% 47%;
+  background-color: #fdeaaf;
+}
+
+.arms-2 .arm-l-2 {
+  position: absolute;
+  top: 30px;
+  left: -55px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 160px;
+  width: 130px;
+  background-color: #f14835;
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+.arms-2 .arm-r-2 {
+  position: absolute;
+  left: 120px;
+  top: 40px;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  height: 160px;
+  width: 130px;
+  background-color: #f14835;
+  -webkit-clip-path: ellipse(25% 40% at 50% 50%);
+          clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+.feets-2 .foot-l-2 {
+  z-index: -9;
+  position: absolute;
+  -webkit-transform: rotate(-100deg);
+          transform: rotate(-100deg);
+  top: 120px;
+  left: 10px;
+  border-radius: 52% 48% 8% 92% / 67% 40% 60% 33%;
+  width: 63px;
+  height: 129px;
+  background-color: #e2b93c;
+}
+
+.feets-2 .foot-r-2-correction {
+  z-index: -8;
+  background-color: #f14835;
+  width: 160px;
+  height: 120px;
+  border-radius: 50%;
+  left: 26px;
+  top: 80px;
+  position: absolute;
+}
+
+.feets-2 .foot-r-2 {
+  z-index: -9;
+  position: absolute;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  left: 107px;
+  top: 120px;
+  border-radius: 31% 69% 39% 61% / 47% 45% 55% 53%;
+  width: 63px;
+  height: 129px;
+  background-color: #e2b93c;
+}
+
+.spear .cloth {
+  background-color: #f14835;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: -24px;
+  position: absolute;
+  z-index: 100;
+}
+
+.spear .cloth-up {
+  height: 15px;
+  width: 32px;
+  background-color: #f14835;
+  border-radius: 33% 67% 88% 12% / 67% 54% 46% 33%;
+  position: absolute;
+  left: -8px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.spear .cloth-down {
+  height: 15px;
+  width: 32px;
+  background-color: #f14835;
+  border-radius: 33% 67% 88% 12% / 67% 54% 46% 33%;
+  position: absolute;
+  left: -8px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.spear .stick {
+  z-index: 99;
+  width: 20px;
+  height: 250px;
+  background-color: brown;
+  position: absolute;
+  left: -20px;
+  border-radius: 20px;
+}
+
+.spear .part1 {
+  position: absolute;
+  height: 50px;
+  width: 30px;
+  left: -25px;
+  top: -10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-color: #e7e7e7;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.spear .part2 {
+  position: absolute;
+  height: 50px;
+  width: 30px;
+  left: -25px;
+  top: -60px;
+  background-color: #f7f7f7;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+/*# sourceMappingURL=style.css.map */
